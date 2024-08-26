@@ -29,15 +29,15 @@ Search Task (Optional): Users should be able to search for tasks by their ID or 
 Sort Tasks (Optional): Users should be able to sort tasks based on different criteria like task name, task status, or creation date.
 
 ### User Interaction
-Command-Line Interface (CLI): The system should have a simple CLI that allows users to perform the above operations.
-A menu should be displayed to users with options to add, update, delete, view, search, and sort tasks.
-Users should be able to navigate through options using numeric or string inputs.
-Error Handling
-Validation: The system should validate user input:
-Ensure that task names and descriptions are not empty.
-Check for valid status values (e.g., only allow predefined status options).
-Prevent adding duplicate task IDs.
-Exception Handling: The system should handle exceptions gracefully (e.g., handling invalid inputs, non-existent task IDs for updates or deletions).
+-Command-Line Interface (CLI): The system should have a simple CLI that allows users to perform the above operations.
+-A menu should be displayed to users with options to add, update, delete, view, search, and sort tasks.
+-Users should be able to navigate through options using numeric or string inputs.
+-Error Handling
+-Validation: The system should validate user input:
+-Ensure that task names and descriptions are not empty.
+-Check for valid status values (e.g., only allow predefined status options).
+-Prevent adding duplicate task IDs.
+-Exception Handling: The system should handle exceptions gracefully (e.g., handling invalid inputs, non-existent task IDs for updates or deletions).
 
 ## Non-Functional Requirements
 These define the quality attributes, performance, and other characteristics of the system:
