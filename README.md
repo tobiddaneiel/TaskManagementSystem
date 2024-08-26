@@ -4,7 +4,7 @@ This describes a system which enables a user to add new tasks, update existing t
 #  Requirements
 ## Functional Requirements
 These are the core features and functionalities that the application must provide:
-1. Task Management Operations
+### Task Management Operations
 Add Task: Users should be able to add a new task with the following details:
 -Task ID (unique identifier)
 -Task name
@@ -28,7 +28,7 @@ Search Task (Optional): Users should be able to search for tasks by their ID or 
 
 Sort Tasks (Optional): Users should be able to sort tasks based on different criteria like task name, task status, or creation date.
 
-2. User Interaction
+### User Interaction
 Command-Line Interface (CLI): The system should have a simple CLI that allows users to perform the above operations.
 A menu should be displayed to users with options to add, update, delete, view, search, and sort tasks.
 Users should be able to navigate through options using numeric or string inputs.
@@ -62,5 +62,5 @@ User Authentication: Basic user login to restrict access to the task management 
 Priority Levels: Add priority levels to tasks and allow users to sort tasks by priority.
 Notifications: Implement notification features (e.g., remind users of pending tasks).
 
-##Conclusion
+## Conclusion
 These requirements provide a comprehensive overview of what is needed to build a simple Task Management System using Java. The functional requirements outline what the system should do, non-functional requirements define how well it should perform these tasks, and technical requirements specify the tools and technologies to be used.
