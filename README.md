@@ -4,7 +4,6 @@ This describes a system which enables a user to add new tasks, update existing t
 #  Requirements
 ## Functional Requirements
 These are the core features and functionalities that the application must provide:
-
 1. Task Management Operations
 Add Task: Users should be able to add a new task with the following details:
 -Task ID (unique identifier)
