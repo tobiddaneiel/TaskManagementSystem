@@ -2,10 +2,10 @@
 This describes a system which enables a user to add new tasks, update existing tasks, delete tasks, and to view all tasks.
 
 #  Requirements
-1. Functional Requirements
+## Functional Requirements
 These are the core features and functionalities that the application must provide:
 
-## Task Management Operations
+1. Task Management Operations
 Add Task: Users should be able to add a new task with the following details:
 -Task ID (unique identifier)
 -Task name
@@ -29,7 +29,7 @@ Search Task (Optional): Users should be able to search for tasks by their ID or 
 
 Sort Tasks (Optional): Users should be able to sort tasks based on different criteria like task name, task status, or creation date.
 
-## User Interaction
+2. User Interaction
 Command-Line Interface (CLI): The system should have a simple CLI that allows users to perform the above operations.
 A menu should be displayed to users with options to add, update, delete, view, search, and sort tasks.
 Users should be able to navigate through options using numeric or string inputs.
@@ -40,7 +40,7 @@ Check for valid status values (e.g., only allow predefined status options).
 Prevent adding duplicate task IDs.
 Exception Handling: The system should handle exceptions gracefully (e.g., handling invalid inputs, non-existent task IDs for updates or deletions).
 
-2. Non-Functional Requirements
+## Non-Functional Requirements
 These define the quality attributes, performance, and other characteristics of the system:
 Usability: The CLI should be user-friendly, with clear prompts and error messages.
 Performance: The system should respond quickly to user inputs, with task operations (add, update, delete, view) completing in a timely manner.
@@ -49,7 +49,7 @@ Maintainability: The code should be modular, well-commented, and easy to maintai
 Portability: The system should run on any machine with Java installed, ensuring platform independence.
 Reliability: The system should handle incorrect inputs or exceptions without crashing, ensuring robust and reliable operation.
 
-3. Technical Requirements
+## Technical Requirements
 These define the technical aspects needed to develop and run the project:
 Programming Language: Java (Java SE 8 or higher).
 Development Environment: Any IDE compatible with Java (e.g., IntelliJ IDEA, Eclipse, NetBeans).
@@ -63,5 +63,5 @@ User Authentication: Basic user login to restrict access to the task management 
 Priority Levels: Add priority levels to tasks and allow users to sort tasks by priority.
 Notifications: Implement notification features (e.g., remind users of pending tasks).
 
-Conclusion
+##Conclusion
 These requirements provide a comprehensive overview of what is needed to build a simple Task Management System using Java. The functional requirements outline what the system should do, non-functional requirements define how well it should perform these tasks, and technical requirements specify the tools and technologies to be used.
