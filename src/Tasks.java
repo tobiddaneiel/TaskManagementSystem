@@ -1,5 +1,5 @@
 public class Tasks {
-    //private static int ID = 0;
+    protected static int ID = 0;
     public String Name;
     public String description;
     public String status;
@@ -7,7 +7,7 @@ public class Tasks {
         this.Name = Name;
         this.description = description;
         this.status = status;
-        //ID ++;
+        ID += 1;
     }
 
 }

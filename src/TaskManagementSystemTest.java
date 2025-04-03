@@ -6,24 +6,23 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TaskManagementSystemTest {
     private TaskManager manager;
+    private Tasks task;
+    private Tasks task2;
     @BeforeEach
     public void setup(){
         manager = new TaskManager();
-        Tasks task = new Tasks("Eating food","digestion of food", "In process");
-        Tasks task2 = new Tasks("Watching a show","Entertainment", "Stopped");
+        task = new Tasks("Eating food","digestion of food", "In process");
+        task2 = new Tasks("Watching a show","Entertainment", "Stopped");
     }
     @Test
     public void testAddTask(){
-        Tasks task = new Tasks("Eating food","digestion of food", "In process");
-        Tasks task2 = new Tasks("Watching a show","Entertainment", "Stopped");
         manager.addTask(task);
         assertEquals((manager.tasksNumber),1);
-    }
+        assertEquals((task.ID),1);
+        assertEquals((task2.ID),2);}
 
     @Test
     public void testUpdateTask(){
-        Tasks task = new Tasks("Eating food","digestion of food", "In process");
-        Tasks task2 = new Tasks("Watching a show","Entertainment", "Stopped");
         manager.addTask(task);
         manager.updateTask(task,"Stopped");
         assertEquals((task.status),"Stopped");
@@ -34,8 +33,6 @@ public class TaskManagementSystemTest {
 
     @Test
     public void testDeleteTask(){
-        Tasks task = new Tasks("Eating food","digestion of food", "In process");
-        Tasks task2 = new Tasks("Watching a show","Entertainment", "Stopped");
         manager.addTask(task);
         manager.addTask(task2);
         manager.deleteTask(task);
@@ -45,8 +42,6 @@ public class TaskManagementSystemTest {
 
     @Test
     public void testViewTask(){
-        Tasks task = new Tasks("Eating food","digestion of food", "In process");
-        Tasks task2 = new Tasks("Watching a show","Entertainment", "Stopped");
         manager.viewTask(task);
         manager.addTask(task);
         manager.viewTask(task);

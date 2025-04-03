@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskManagement.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TaskManagementSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TaskManagementSystemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TaskManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tasks.java" afterDir="false" />
+    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="first commit message for Tobi">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManagementSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -47,9 +44,10 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.TaskManagement.executor": "Run",
-    "Application.TaskManagementSystem.executor": "Debug",
+    "Application.TaskManagementSystem.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.TaskManagementSystemTest.executor": "Run",
+    "JUnit.TaskManagementSystemTest.testAddTask.executor": "Run",
     "JUnit.TaskManagementSystemTest.testDeleteTask.executor": "Run",
     "JUnit.TaskManagementSystemTest.testViewTask.executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -58,14 +56,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TaskManagementSystemTest.testViewTask">
+  <component name="RunManager" selected="JUnit.TaskManagementSystemTest.testAddTask">
     <configuration name="TaskManagementSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TaskManagementSystem" />
       <module name="TaskManagement" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskManagementSystemTest.testAddTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManagement" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TaskManagementSystemTest" />
+      <option name="METHOD_NAME" value="testAddTask" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,9 +100,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskManagementSystemTest.testAddTask" />
+        <item itemvalue="Application.TaskManagementSystem" />
         <item itemvalue="JUnit.TaskManagementSystemTest.testViewTask" />
         <item itemvalue="JUnit.TaskManagementSystemTest.testDeleteTask" />
-        <item itemvalue="Application.TaskManagementSystem" />
       </list>
     </recent_temporary>
   </component>
@@ -107,6 +116,15 @@
       <option name="presentableId" value="Default" />
       <updated>1724696413783</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit message for Tobi">
+      <option name="closed" value="true" />
+      <created>1736447978058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736447978058</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,10 +132,31 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit message for Tobi" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit message for Tobi" />
   </component>
 </project>
