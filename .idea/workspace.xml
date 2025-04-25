@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="first commit message for Tobi">
+      <change afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManagementSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TaskManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManagementSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tasks.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +32,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -40,26 +46,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.TaskManagement.executor": "Run",
-    "Application.TaskManagementSystem.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.TaskManagementSystemTest.executor": "Run",
-    "JUnit.TaskManagementSystemTest.testAddTask.executor": "Run",
-    "JUnit.TaskManagementSystemTest.testDeleteTask.executor": "Run",
-    "JUnit.TaskManagementSystemTest.testViewTask.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TaskManagement.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TaskManagementSystem.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.TaskManagementSystemTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskManagementSystemTest.testAddTask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskManagementSystemTest.testDeleteTask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskManagementSystemTest.testViewTask.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.TaskManagementSystemTest.testAddTask">
     <configuration name="TaskManagementSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TaskManagementSystem" />
@@ -124,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736447978058</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit message for Tobi">
+      <option name="closed" value="true" />
+      <created>1743696333726</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743696333726</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,7 +157,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>

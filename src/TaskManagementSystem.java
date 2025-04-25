@@ -1,7 +1,7 @@
 public class TaskManagementSystem {
     public static void main(String[] args) {
-        //Tasks task = new Tasks("Eating food","digestion of food", "In process");
-        //Tasks task2 = new Tasks("Watching a show","Entertainment", "Stopped");
+        //Task task = new Task("Eating food","digestion of food", "In process");
+        //Task task2 = new Task("Watching a show","Entertainment", "Stopped");
         //TaskManager taskControl = new TaskManager();
         //taskControl.addTask(task);
         //taskControl.addTask(task2);

@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -6,13 +5,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TaskManagementSystemTest {
     private TaskManager manager;
-    private Tasks task;
-    private Tasks task2;
+    private Task task;
+    private Task task2;
     @BeforeEach
     public void setup(){
         manager = new TaskManager();
-        task = new Tasks("Eating food","digestion of food", "In process");
-        task2 = new Tasks("Watching a show","Entertainment", "Stopped");
+        task = new Task("Eating food","digestion of food", "In process");
+        task2 = new Task("Watching a show","Entertainment", "Stopped");
     }
     @Test
     public void testAddTask(){
