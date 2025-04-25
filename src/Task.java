@@ -1,18 +1,18 @@
 public class Task {
-    private static int IdCounter = 0;
-    private static final String DEFAULT_STATUS = "Opened";
-    private int ID;
+    private static int idCounter = 0;
+    private final int id;
     private String title;
     private String description;
-    private String status;
+    private TaskStatus status;
     public Task(String title, String description){
+        if (title == null || title.trim().isEmpty()) throw new IllegalArgumentException("Title can not be empty");
         this.title = title;
         this.description = description;
-        this.status = DEFAULT_STATUS;
-        this.ID = ++IdCounter;
+        this.status = TaskStatus.OPENED;
+        this.id = ++idCounter;
     }
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
     public String getDescription() {
         return description;
@@ -20,22 +20,24 @@ public class Task {
     public void setDescription(String description) {
         this.description = description;
     }
-    public String getStatus() {
+    public TaskStatus getStatus() {
         return status;
     }
-    public void setStatus(String status) {
+    public void setStatus(TaskStatus status) {
+        if (status == null) throw new IllegalArgumentException("status can not be null");
         this.status = status;
     }
     public String getTitle() {
         return title;
     }
     public void setTitle(String title) {
+        if (title == null || title.trim().isEmpty()) throw new IllegalArgumentException("Title can not be empty");
         this.title = title;
     }
 
     @Override
     public String toString() {
-        return "Task ID: " + ID +
+        return "Task id: " + id +
                 ", Title: " + title +
                 ", Description: " + description +
                 ", Status: " + status;
