@@ -1,6 +1,6 @@
 public class User {
-    private static int idCounter = 0;
-    private final int id;
+    private static Integer idCounter = 0;
+    private final Integer id;
     private String username;
     private String password;
     public User(String username, String password){
@@ -25,7 +25,7 @@ public class User {
         this.password = password;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
