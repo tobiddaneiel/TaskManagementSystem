@@ -42,4 +42,9 @@ public class Task {
                 ", Description: " + description +
                 ", Status: " + status;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }

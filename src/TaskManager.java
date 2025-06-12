@@ -40,7 +40,7 @@ public class TaskManager {
         //Checks that the userId and currentTask are both valid
         if (currentTask == null || userId == null) return false;
         List<Task> userTaskList= userTaskDictionary.get(userId);   // The list of tasks particular to the user is placed here
-        //If the user's list exists, then it gets the task and removes the task from the list and the total list of tasks
+        //If the user's list exists, then it removes the task from the list and the total list of tasks
         if (userTaskList!= null && userTaskList.remove(currentTask)) {
             allTasks.remove(currentTask);
             return true;
