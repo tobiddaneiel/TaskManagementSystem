@@ -15,7 +15,8 @@ public class TaskManager {
         //Checks that the userId and newTask are both valid
         if (newTask == null || userId == null) return false;
 
-        userTaskDictionary.putIfAbsent(userId, new ArrayList<>());  //If the user doesn't exist it creates a list of tasks and adds to it
+        userTaskDictionary.putIfAbsent(userId, new ArrayList<>());  //If the user doesn't exist, it creates an empty list of tasks and adds the task to it
+
         //Checks if the user's list of tasks contains the newTask being added already
         if (!userTaskDictionary.get(userId).contains(newTask)){
             userTaskDictionary.get(userId).add(newTask);                //If not it gets the user's list of tasks and adds the task to it.
@@ -40,7 +41,7 @@ public class TaskManager {
         //Checks that the userId and currentTask are both valid
         if (currentTask == null || userId == null) return false;
         List<Task> userTaskList= userTaskDictionary.get(userId);   // The list of tasks particular to the user is placed here
-        //If the user's list exists, then it gets the task and removes the task from the list and the total list of tasks
+        //If the user's list exists, then it removes the task from the list and the total list of tasks
         if (userTaskList!= null && userTaskList.remove(currentTask)) {
             allTasks.remove(currentTask);
             return true;
