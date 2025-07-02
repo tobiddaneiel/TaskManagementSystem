@@ -1,3 +1,5 @@
+package com.example.taskmanager;
+
 public enum TaskStatus {
     OPENED,
     PROGRESSING,

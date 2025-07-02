@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Implemented the remaining functions of the TaskManager class.">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskPersistence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskPersistenceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagement.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskManagementSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskPersistenceManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -64,77 +66,134 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TaskManagement.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TaskManagementSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.TaskManagementSystemTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagementSystemTest.testAddTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagementSystemTest.testDeleteTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagementSystemTest.testViewTask.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.TaskManager [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.TaskManager [test].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.TaskManagement.executor": "Run",
+    "Application.TaskManagementSystem.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.TaskManagementSystemTest.executor": "Run",
+    "JUnit.TaskManagementSystemTest.testAddTask.executor": "Run",
+    "JUnit.TaskManagementSystemTest.testDeleteTask.executor": "Run",
+    "JUnit.TaskManagementSystemTest.testViewTask.executor": "Run",
+    "JUnit.TaskManagerTest.executor": "Run",
+    "JUnit.TaskManagerTest.testAddDuplicateTask.executor": "Run",
+    "JUnit.TaskManagerTest.testAddTaskSuccessfully.executor": "Run",
+    "JUnit.TaskPersistenceTest.executor": "Run",
+    "JUnit.TaskPersistenceTest.testSaveAndLoadTasks.executor": "Run",
+    "JUnit.TaskTest.executor": "Run",
+    "JUnit.TaskTest.testParameterizedConstructorAndGetId.executor": "Run",
+    "JUnit.TaskTest.testToStringIncludesAllFields.executor": "Run",
+    "Maven.TaskManager [clean].executor": "Run",
+    "Maven.TaskManager [test].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.taskmanager" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\OWNER\IdeaProjects\TaskManagement\src\main\java\com\example\taskmanager" />
       <recent name="C:\Users\Olowookere Oluwatobi\IdeaProjects\TaskManagement\src" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.taskmanager" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.TaskManagementSystem">
-    <configuration name="TaskManagementSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TaskManagementSystem" />
-      <module name="TaskManagement" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskManagementSystemTest.testAddTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManagement" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TaskManagementSystemTest" />
-      <option name="METHOD_NAME" value="testAddTask" />
+  <component name="RunManager" selected="JUnit.TaskManagerTest.testAddDuplicateTask">
+    <configuration name="TaskManagerTest.testAddDuplicateTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="testAddDuplicateTask" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskManagementSystemTest.testDeleteTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManagement" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TaskManagementSystemTest" />
-      <option name="METHOD_NAME" value="testDeleteTask" />
+    <configuration name="TaskManagerTest.testAddTaskSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="testAddTaskSuccessfully" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskManagementSystemTest.testViewTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManagement" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TaskManagementSystemTest" />
-      <option name="METHOD_NAME" value="testViewTask" />
+    <configuration name="TaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskTest.testParameterizedConstructorAndGetId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskTest" />
+      <option name="METHOD_NAME" value="testParameterizedConstructorAndGetId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskTest.testToStringIncludesAllFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskTest" />
+      <option name="METHOD_NAME" value="testToStringIncludesAllFields" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,18 +201,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaskManagementSystemTest.testAddTask" />
-        <item itemvalue="Application.TaskManagementSystem" />
-        <item itemvalue="JUnit.TaskManagementSystemTest.testViewTask" />
-        <item itemvalue="JUnit.TaskManagementSystemTest.testDeleteTask" />
+        <item itemvalue="JUnit.TaskManagerTest.testAddDuplicateTask" />
+        <item itemvalue="JUnit.TaskManagerTest.testAddTaskSuccessfully" />
+        <item itemvalue="JUnit.TaskTest.testToStringIncludesAllFields" />
+        <item itemvalue="JUnit.TaskTest.testParameterizedConstructorAndGetId" />
+        <item itemvalue="JUnit.TaskTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
       </set>
     </attachedChunks>
   </component>
@@ -167,7 +227,20 @@
       <updated>1724696413783</updated>
       <workItem from="1749663954497" duration="2593000" />
       <workItem from="1749666587934" duration="833000" />
-      <workItem from="1749739778773" duration="984000" />
+      <workItem from="1749739778773" duration="5351000" />
+      <workItem from="1749748092391" duration="589000" />
+      <workItem from="1749748713097" duration="450000" />
+      <workItem from="1749752722734" duration="3429000" />
+      <workItem from="1749833123473" duration="2654000" />
+      <workItem from="1750264938013" duration="5364000" />
+      <workItem from="1750272529403" duration="623000" />
+      <workItem from="1750787205261" duration="2334000" />
+      <workItem from="1750789900516" duration="4846000" />
+      <workItem from="1750794978812" duration="1708000" />
+      <workItem from="1750966195649" duration="2618000" />
+      <workItem from="1751336946599" duration="3511000" />
+      <workItem from="1751386992594" duration="1307000" />
+      <workItem from="1751472734090" duration="3069000" />
     </task>
     <task id="LOCAL-00001" summary="first commit message for Tobi">
       <option name="closed" value="true" />

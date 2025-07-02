@@ -1,7 +1,10 @@
+package com.example.taskmanager;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class TaskManager {
     private List<Task> allTasks;  //The total lists of tasks that have been added to the manager
@@ -19,14 +22,14 @@ public class TaskManager {
 
         //Checks if the user's list of tasks contains the newTask being added already
         if (!userTaskDictionary.get(userId).contains(newTask)){
-            userTaskDictionary.get(userId).add(newTask);                //If not it gets the user's list of tasks and adds the task to it.
+            userTaskDictionary.get(userId).add(newTask);                //If not, it gets the user's list of tasks and adds the task to it.
             allTasks.add(newTask);  //Adds the task to the total list of tasks
             return true;
         }
         return false;
         //tasksNumber++;
     }
-    public boolean updateTask(Task currentTask, TaskStatus statusUpdate, Integer userId){
+    public boolean updateTask(Task currentTask, String statusUpdate, Integer userId){
         //Checks that the userId and currentTask are both valid
         if (currentTask == null || userId == null || statusUpdate == null) return false;
         List<Task> userTaskList= userTaskDictionary.get(userId);   // The list of tasks particular to the user is placed here
@@ -55,5 +58,14 @@ public class TaskManager {
     public List<Task> getAllTasks() {
         return new ArrayList<>(allTasks);  //This gets all tasks present in the taskManager
     }
+    public void saveAllTasksToFile() {
+        TaskPersistenceManager.saveTasks(userTaskDictionary);
+    }
 
+    public void loadAllTasksFromFile() {
+        this.userTaskDictionary = TaskPersistenceManager.loadTasks();
+        this.allTasks = userTaskDictionary.values().stream()
+                .flatMap(List::stream)
+                .collect(Collectors.toList());
+    }
 }

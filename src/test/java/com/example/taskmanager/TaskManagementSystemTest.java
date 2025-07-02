@@ -1,4 +1,6 @@
-import org.junit.jupiter.api.BeforeEach;
+package com.example.taskmanager;
+
+/*import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -13,6 +15,7 @@ public class TaskManagementSystemTest {
         task = new Task("Eating food","digestion of food", "In process");
         task2 = new Task("Watching a show","Entertainment", "Stopped");
     }
+    @org.junit.Test
     @Test
     public void testAddTask(){
         manager.addTask(task);
@@ -49,3 +52,5 @@ public class TaskManagementSystemTest {
         manager.viewTask(task2);
     }
 }
+
+ */

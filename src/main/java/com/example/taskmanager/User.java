@@ -1,3 +1,5 @@
+package com.example.taskmanager;
+
 public class User {
     private static Integer idCounter = 0;
     private final Integer id;
