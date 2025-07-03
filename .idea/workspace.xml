@@ -4,19 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Implemented the remaining functions of the TaskManager class.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskPersistenceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskTest.java" afterDir="false" />
+    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Added some task files and ensured the files follow the maven format">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskManagementSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskManagementSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TaskPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskPersistenceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskPersistence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.taskmanager.TaskPersistenceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.taskmanager.TaskPersistenceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.taskmanager.TaskPersistenceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.taskmanager.TaskPersistenceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskManagerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -54,6 +57,20 @@
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -79,12 +96,15 @@
     "JUnit.TaskManagerTest.executor": "Run",
     "JUnit.TaskManagerTest.testAddDuplicateTask.executor": "Run",
     "JUnit.TaskManagerTest.testAddTaskSuccessfully.executor": "Run",
+    "JUnit.TaskManagerTest.testGetAllTasksReturnsAllTasks.executor": "Run",
+    "JUnit.TaskManagerTest.testGetUserTasksReturnsCorrectTasks.executor": "Run",
     "JUnit.TaskPersistenceTest.executor": "Run",
     "JUnit.TaskPersistenceTest.testSaveAndLoadTasks.executor": "Run",
     "JUnit.TaskTest.executor": "Run",
     "JUnit.TaskTest.testParameterizedConstructorAndGetId.executor": "Run",
     "JUnit.TaskTest.testToStringIncludesAllFields.executor": "Run",
     "Maven.TaskManager [clean].executor": "Run",
+    "Maven.TaskManager [install].executor": "Run",
     "Maven.TaskManager [test].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -100,10 +120,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "build.tools",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -117,14 +137,15 @@
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.taskmanager" />
+      <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TaskManagerTest.testAddDuplicateTask">
+  <component name="RunManager">
     <configuration name="TaskManagerTest.testAddDuplicateTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,7 +161,7 @@
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,32 +173,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskManagerTest.testGetAllTasksReturnsAllTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="testGetAllTasksReturnsAllTasks" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskTest.testParameterizedConstructorAndGetId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskManagerTest.testGetUserTasksReturnsCorrectTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskTest" />
-      <option name="METHOD_NAME" value="testParameterizedConstructorAndGetId" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="testGetUserTasksReturnsCorrectTasks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,7 +209,7 @@
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -201,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaskManagerTest.testAddDuplicateTask" />
+        <item itemvalue="JUnit.TaskManagerTest.testGetAllTasksReturnsAllTasks" />
         <item itemvalue="JUnit.TaskManagerTest.testAddTaskSuccessfully" />
+        <item itemvalue="JUnit.TaskManagerTest.testGetUserTasksReturnsCorrectTasks" />
+        <item itemvalue="JUnit.TaskManagerTest.testAddDuplicateTask" />
         <item itemvalue="JUnit.TaskTest.testToStringIncludesAllFields" />
-        <item itemvalue="JUnit.TaskTest.testParameterizedConstructorAndGetId" />
-        <item itemvalue="JUnit.TaskTest" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +262,10 @@
       <workItem from="1750966195649" duration="2618000" />
       <workItem from="1751336946599" duration="3511000" />
       <workItem from="1751386992594" duration="1307000" />
-      <workItem from="1751472734090" duration="3069000" />
+      <workItem from="1751472734090" duration="6165000" />
+      <workItem from="1751565327545" duration="1031000" />
+      <workItem from="1751568175654" duration="3623000" />
+      <workItem from="1751571855865" duration="2982000" />
     </task>
     <task id="LOCAL-00001" summary="first commit message for Tobi">
       <option name="closed" value="true" />
@@ -290,7 +315,39 @@
       <option name="project" value="LOCAL" />
       <updated>1746287176240</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="made some changed to the TaskManager class">
+      <option name="closed" value="true" />
+      <created>1751476217993</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1751476217993</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added some task files and ensured the files follow the maven format">
+      <option name="closed" value="true" />
+      <created>1751476345039</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751476345039</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added some task files and ensured the files follow the maven format">
+      <option name="closed" value="true" />
+      <created>1751476616097</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751476616097</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added some task files and ensured the files follow the maven format">
+      <option name="closed" value="true" />
+      <created>1751476634437</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1751476634437</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +387,9 @@
     <MESSAGE value="Implemented the task, user and taskStatus classes" />
     <MESSAGE value="Updated the User class and implemented some functions of the TaskManager class." />
     <MESSAGE value="Implemented the remaining functions of the TaskManager class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the remaining functions of the TaskManager class." />
+    <MESSAGE value="Updated Intellij IDE and had to reconnect the github account" />
+    <MESSAGE value="made some changed to the TaskManager class" />
+    <MESSAGE value="Added some task files and ensured the files follow the maven format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some task files and ensured the files follow the maven format" />
   </component>
 </project>

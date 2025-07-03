@@ -41,8 +41,6 @@ public class TaskManagerTest {
         taskManager.addTask(task1, userId);
         boolean addedAgainForTwo = taskManager.addTask(task1, userId2);
         assertTrue(addedAgainForTwo);
-
-
     }
 
     @Test
@@ -102,5 +100,9 @@ public class TaskManagerTest {
         taskManager.addTask(task2, userId);
         List<Task> userTasks = taskManager.getUserTasks(userId);
         assertEquals(2, userTasks.size());
+        taskManager.deleteTask(task2, userId);
+        List<Task> userTasks2 = taskManager.getUserTasks(userId);
+        assertEquals(1, userTasks2.size());
+
     }
 }
