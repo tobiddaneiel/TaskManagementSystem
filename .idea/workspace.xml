@@ -4,10 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Fixed the error created by the merge yesterday by debugging the code and going through the needed settings.">
+    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Deleted the taskpersistence class as it was a duplicate of the taskpersistencemanager class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskManagementSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskManagementSystemTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskPersistenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskPersistenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskManagementSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.taskmanager.TaskPersistenceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.taskmanager.TaskPersistenceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.taskmanager.TaskPersistenceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.taskmanager.TaskPersistenceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +145,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TaskPersistenceTest.testSaveAndLoadTasks">
     <configuration name="TaskManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
@@ -142,22 +157,6 @@
       <option name="PACKAGE_NAME" value="com.example.taskmanager" />
       <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskManagerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskManagerTest.testAddDuplicateTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskManagerTest" />
-      <option name="METHOD_NAME" value="testAddDuplicateTask" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -194,17 +193,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskManagerTest.testGetUserTasksReturnsCorrectTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskPersistenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="com.example.taskmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskManagerTest" />
-      <option name="METHOD_NAME" value="testGetUserTasksReturnsCorrectTasks" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskPersistenceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskPersistenceTest.testSaveAndLoadTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskPersistenceTest" />
+      <option name="METHOD_NAME" value="testSaveAndLoadTasks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskPersistenceTest.testSaveAndLoadTasks" />
+        <item itemvalue="JUnit.TaskPersistenceTest" />
         <item itemvalue="JUnit.TaskManagerTest" />
         <item itemvalue="JUnit.TaskManagerTest.testGetAllTasksReturnsAllTasks" />
         <item itemvalue="JUnit.TaskManagerTest.testAddTaskSuccessfully" />
-        <item itemvalue="JUnit.TaskManagerTest.testGetUserTasksReturnsCorrectTasks" />
-        <item itemvalue="JUnit.TaskManagerTest.testAddDuplicateTask" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +268,9 @@
       <workItem from="1751472734090" duration="6165000" />
       <workItem from="1751565327545" duration="1031000" />
       <workItem from="1751568175654" duration="3623000" />
-      <workItem from="1751571855865" duration="3949000" />
+      <workItem from="1751571855865" duration="6473000" />
+      <workItem from="1751661878187" duration="4179000" />
+      <workItem from="1752256842352" duration="1592000" />
     </task>
     <task id="LOCAL-00001" summary="first commit message for Tobi">
       <option name="closed" value="true" />
@@ -344,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751575520689</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Deleted the taskpersistence class as it was a duplicate of the taskpersistencemanager class">
+      <option name="closed" value="true" />
+      <created>1751576738201</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1751576738201</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +412,7 @@
     <MESSAGE value="made some changed to the TaskManager class" />
     <MESSAGE value="Added some task files and ensured the files follow the maven format" />
     <MESSAGE value="Fixed the error created by the merge yesterday by debugging the code and going through the needed settings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the error created by the merge yesterday by debugging the code and going through the needed settings." />
+    <MESSAGE value="Deleted the taskpersistence class as it was a duplicate of the taskpersistencemanager class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted the taskpersistence class as it was a duplicate of the taskpersistencemanager class" />
   </component>
 </project>

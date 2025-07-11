@@ -7,6 +7,7 @@ import org.junit.jupiter.api.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -14,9 +15,15 @@ import static org.junit.jupiter.api.Assertions.fail;
 public class TaskPersistenceTest {
 
     private final String tempFilePath = "temp_tasks.json";
-
+    @BeforeEach
+    public void clearFileBeforeTest() {
+        File file = new File(tempFilePath);
+        if (file.exists()) {
+            file.delete();
+        }
+    }
     @AfterEach
-    public void cleanup() {
+    public void cleanupAfterTest() {
         File file = new File(tempFilePath);
         if (file.exists()) {
             file.delete();
@@ -25,23 +32,14 @@ public class TaskPersistenceTest {
 
     @Test
     public void testSaveAndLoadTasks() {
-        List<Task> tasks = List.of(new Task("Sample Task", "Description"));
-        // Save to temp file
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.writerWithDefaultPrettyPrinter().writeValue(new File(tempFilePath), tasks);
-        } catch (IOException e) {
-            fail("Saving failed: " + e.getMessage());
-        }
-
-        // Load from temp file
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            List<Task> loaded = mapper.readValue(new File(tempFilePath), new TypeReference<>() {});
-            assertEquals(tasks.size(), loaded.size());
-            assertEquals(tasks.get(0).getTitle(), loaded.get(0).getTitle());
-        } catch (IOException e) {
-            fail("Loading failed: " + e.getMessage());
-        }
+        //List<Task> tasks = List.of(new Task("Sample Task", "Description"));
+        Task task1 = new Task("Sample Task", "Description");
+        Task task2 = new Task("Sample Task 2", "Description 2");
+        Map<Integer, List<Task>> userTaskDictionary = Map.of(1, List.of(task1, task2));
+        TaskPersistenceManager.saveTasks(userTaskDictionary);
+        Map<Integer, List<Task>> loadedTaskDictionary = TaskPersistenceManager.loadTasks();
+        assertEquals(userTaskDictionary.size(), loadedTaskDictionary.size());
+        assertEquals(userTaskDictionary.get(1).get(0).getTitle(), loadedTaskDictionary.get(1).get(0).getTitle());
+        
     }
 }
