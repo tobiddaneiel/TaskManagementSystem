@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Deleted the taskpersistence class as it was a duplicate of the taskpersistencemanager class">
+    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Created the task persistence file and ran it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskManagementSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskManagementSystemTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskPersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskPersistenceManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskPersistenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskPersistenceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskManagementSystem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.taskmanager.TaskPersistenceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.taskmanager.TaskPersistenceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.taskmanager.TaskPersistenceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.taskmanager.TaskPersistenceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,50 +75,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TaskManagement.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TaskManagementSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.TaskManagementSystemTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagementSystemTest.testAddTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagementSystemTest.testDeleteTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagementSystemTest.testViewTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testAddDuplicateTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testAddTaskSuccessfully.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testGetAllTasksReturnsAllTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testGetUserTasksReturnsCorrectTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskPersistenceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskPersistenceTest.testSaveAndLoadTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.testParameterizedConstructorAndGetId.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.testToStringIncludesAllFields.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.TaskManager [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.TaskManager [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.TaskManager [test].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.TaskManagement.executor": "Run",
+    "Application.TaskManagementSystem.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.TaskManagementSystemTest.executor": "Run",
+    "JUnit.TaskManagementSystemTest.testAddTask.executor": "Run",
+    "JUnit.TaskManagementSystemTest.testDeleteTask.executor": "Run",
+    "JUnit.TaskManagementSystemTest.testViewTask.executor": "Run",
+    "JUnit.TaskManagerTest.executor": "Run",
+    "JUnit.TaskManagerTest.testAddDuplicateTask.executor": "Run",
+    "JUnit.TaskManagerTest.testAddTaskSuccessfully.executor": "Run",
+    "JUnit.TaskManagerTest.testGetAllTasksReturnsAllTasks.executor": "Run",
+    "JUnit.TaskManagerTest.testGetUserTasksReturnsCorrectTasks.executor": "Run",
+    "JUnit.TaskPersistenceTest.executor": "Run",
+    "JUnit.TaskPersistenceTest.testLoadTasksFromCorruptedJsonFile.executor": "Debug",
+    "JUnit.TaskPersistenceTest.testLoadTasksReturnsEmptyWhenFileDoesNotExist.executor": "Run",
+    "JUnit.TaskPersistenceTest.testSaveAndLoadTasks.executor": "Run",
+    "JUnit.TaskTest.executor": "Run",
+    "JUnit.TaskTest.testParameterizedConstructorAndGetId.executor": "Run",
+    "JUnit.TaskTest.testToStringIncludesAllFields.executor": "Run",
+    "Maven.TaskManager [clean].executor": "Run",
+    "Maven.TaskManager [install].executor": "Run",
+    "Maven.TaskManager [test].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "build.tools",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.taskmanager" />
@@ -145,7 +134,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TaskPersistenceTest.testSaveAndLoadTasks">
+  <component name="RunManager">
     <configuration name="TaskManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
@@ -161,38 +150,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskManagerTest.testAddTaskSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskManagerTest" />
-      <option name="METHOD_NAME" value="testAddTaskSuccessfully" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskManagerTest.testGetAllTasksReturnsAllTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskManagerTest" />
-      <option name="METHOD_NAME" value="testGetAllTasksReturnsAllTasks" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TaskPersistenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
@@ -204,6 +161,38 @@
       <option name="PACKAGE_NAME" value="com.example.taskmanager" />
       <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskPersistenceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskPersistenceTest.testLoadTasksFromCorruptedJsonFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskPersistenceTest" />
+      <option name="METHOD_NAME" value="testLoadTasksFromCorruptedJsonFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskPersistenceTest.testLoadTasksReturnsEmptyWhenFileDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskPersistenceTest" />
+      <option name="METHOD_NAME" value="testLoadTasksReturnsEmptyWhenFileDoesNotExist" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -226,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskPersistenceTest.testLoadTasksReturnsEmptyWhenFileDoesNotExist" />
         <item itemvalue="JUnit.TaskPersistenceTest.testSaveAndLoadTasks" />
+        <item itemvalue="JUnit.TaskPersistenceTest.testLoadTasksFromCorruptedJsonFile" />
         <item itemvalue="JUnit.TaskPersistenceTest" />
         <item itemvalue="JUnit.TaskManagerTest" />
-        <item itemvalue="JUnit.TaskManagerTest.testGetAllTasksReturnsAllTasks" />
-        <item itemvalue="JUnit.TaskManagerTest.testAddTaskSuccessfully" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +259,8 @@
       <workItem from="1751568175654" duration="3623000" />
       <workItem from="1751571855865" duration="6473000" />
       <workItem from="1751661878187" duration="4179000" />
-      <workItem from="1752256842352" duration="1592000" />
+      <workItem from="1752256842352" duration="2383000" />
+      <workItem from="1752259641959" duration="6879000" />
     </task>
     <task id="LOCAL-00001" summary="first commit message for Tobi">
       <option name="closed" value="true" />
@@ -368,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751576738201</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Created the task persistence file and ran it">
+      <option name="closed" value="true" />
+      <created>1752258987408</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1752258987408</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,6 +411,7 @@
     <MESSAGE value="Added some task files and ensured the files follow the maven format" />
     <MESSAGE value="Fixed the error created by the merge yesterday by debugging the code and going through the needed settings." />
     <MESSAGE value="Deleted the taskpersistence class as it was a duplicate of the taskpersistencemanager class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted the taskpersistence class as it was a duplicate of the taskpersistencemanager class" />
+    <MESSAGE value="Created the task persistence file and ran it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the task persistence file and ran it" />
   </component>
 </project>

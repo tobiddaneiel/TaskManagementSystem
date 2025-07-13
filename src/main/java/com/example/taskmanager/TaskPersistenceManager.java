@@ -11,9 +11,12 @@ import java.util.List;
 import java.util.Map;
 
 public class TaskPersistenceManager {
-    private static final String FILE_PATH = "tasks.json";  // You can change the path if needed
+    private static String FILE_PATH = "tasks.json";  // You can change the path if needed
     private static final ObjectMapper mapper = new ObjectMapper();
 
+    public static void setFilePath(String filePath) {
+        FILE_PATH = filePath;
+    }
     public static void saveTasks(Map<Integer, List<Task>> userTaskDictionary) {
         try {
             mapper.writerWithDefaultPrettyPrinter().writeValue(new File(FILE_PATH), userTaskDictionary);
