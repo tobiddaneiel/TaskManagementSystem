@@ -1,3 +1,4 @@
-com\example\taskmanager\TaskTest.class
 com\example\taskmanager\TaskManagerTest.class
+com\example\taskmanager\TaskTest.class
+com\example\taskmanager\UserTest.class
 com\example\taskmanager\TaskPersistenceTest.class

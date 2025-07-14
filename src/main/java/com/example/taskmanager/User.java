@@ -1,5 +1,8 @@
 package com.example.taskmanager;
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+
 public class User {
     private static Integer idCounter = 0;
     private final Integer id;
@@ -25,6 +28,17 @@ public class User {
     public void setPassword(String password) {
         if (password == null || password.length() <= 7) throw new IllegalArgumentException("Password must be at least 8 characters");
         this.password = password;
+    }
+
+    protected boolean checkPassword(String passwordToCheck) {
+        if (passwordToCheck == null || passwordToCheck.length() <= 7) {
+            return false;
+        }
+        // Use constant-time comparison
+        return MessageDigest.isEqual(
+                this.password.getBytes(StandardCharsets.UTF_8),
+                passwordToCheck.getBytes(StandardCharsets.UTF_8)
+        );
     }
 
     public Integer getId() {
