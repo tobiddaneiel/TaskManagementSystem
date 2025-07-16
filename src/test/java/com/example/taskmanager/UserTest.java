@@ -10,7 +10,7 @@ public class UserTest {
     private User user;
     @BeforeEach
     public void setup(){
-        user = new User("testUser", "<PASSWORD>");
+        user = new User("testUser", "securePass123");
     }
 
     @AfterEach
@@ -35,12 +35,11 @@ public class UserTest {
     }
     @Test
     public void testSetAndCheckPassword(){
-        user.setPassword("<PASSWORD>");
-        assertTrue(user.checkPassword("<PASSWORD>"));
+        user.setPassword("securePass123");
+        assertTrue(user.checkPassword("securePass123"));
         assertThrows(IllegalArgumentException.class, () -> {user.setPassword(null);});
         assertThrows(IllegalArgumentException.class, () -> {user.setPassword("");});
-        assertThrows(IllegalArgumentException.class, () -> {user.setPassword("<PASS");});
-        assertThrows(IllegalArgumentException.class, () -> {user.setPassword(null);});
+        assertThrows(IllegalArgumentException.class, () -> {user.setPassword("secure");});
     }
     @Test
     public void testGetId(){
