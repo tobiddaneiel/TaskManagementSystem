@@ -1,8 +1,8 @@
 com\example\taskmanager\Task.class
+com\example\taskmanager\PersistenceManager$2.class
+com\example\taskmanager\PersistenceManager.class
 com\example\taskmanager\User.class
 com\example\taskmanager\TaskManager.class
-com\example\taskmanager\TaskPersistenceManager$1.class
-com\example\taskmanager\TaskPersistenceManager.class
+com\example\taskmanager\PersistenceManager$1.class
 com\example\taskmanager\UserManager.class
 com\example\taskmanager\TaskStatus.class
-com\example\taskmanager\TaskPersistenceManager$2.class

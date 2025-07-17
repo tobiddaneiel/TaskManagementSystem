@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class TaskPersistenceManager {
+public class PersistenceManager {
     private static String TASK_FILE_PATH = "tasks.json";  // You can change the path if needed
     private static String USER_FILE_PATH = "users.json";  // You can change the path if needed
     private static final ObjectMapper mapper = new ObjectMapper();

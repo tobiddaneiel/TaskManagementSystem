@@ -10,19 +10,20 @@ public class UserManager {
         allUsers = new ArrayList<>();
     }
 
-    public User register(String username, String password) {
-        User user = new User(username, password);
+    public void register(User user) {
+        if (user == null) {
+            throw new NullPointerException("Go create a User before registering");
+        }
         allUsers.add(user);
-        return user;
     }
 
-    public User login(String username, String password) {
+    public boolean login(String username, String password) {
         for (User user : allUsers) {
             if (user.getUsername().equals(username) && user.checkPassword(password)) {
-                return user;
+                return true;
             }
         }
-        return null;  // Invalid login
+        return false;  // Invalid login
     }
 
     public List<User> getAllUsers() {

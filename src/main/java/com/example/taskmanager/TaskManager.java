@@ -59,11 +59,11 @@ public class TaskManager {
         return new ArrayList<>(allTasks);  //This gets all tasks present in the taskManager
     }
     public void saveAllTasksToFile() {
-        TaskPersistenceManager.saveTasks(userTaskDictionary);
+        PersistenceManager.saveTasks(userTaskDictionary);
     }
 
     public void loadAllTasksFromFile() {
-        this.userTaskDictionary = TaskPersistenceManager.loadTasks();
+        this.userTaskDictionary = PersistenceManager.loadTasks();
         this.allTasks = userTaskDictionary.values().stream()
                 .flatMap(List::stream)
                 .collect(Collectors.toList());
