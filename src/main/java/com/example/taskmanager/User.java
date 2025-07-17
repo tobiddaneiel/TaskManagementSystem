@@ -8,6 +8,12 @@ public class User {
     private final Integer id;
     private String username;
     private String password;
+
+    public User(){
+        this.id = ++idCounter;
+        this.username = "Default User";
+        this.password = "securePass123";
+    }
     public User(String username, String password){
         if (username == null || username.trim().isEmpty()) throw new IllegalArgumentException("Username can not be empty");
         if (password == null || password.length() <= 7) throw new IllegalArgumentException("Password must be at least 8 characters");

@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Completed the UserTest class">
+    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Updated the UserTest class to use a more realistic password. I also implemented a checkPassword method which guides against timing attacks in the user class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/UserManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskPersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskPersistenceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskPersistenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskPersistenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.taskmanager.TaskPersistenceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.taskmanager.TaskPersistenceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.taskmanager.TaskPersistenceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.taskmanager.TaskPersistenceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,9 +99,11 @@
     &quot;JUnit.TaskManagerTest.testGetAllTasksReturnsAllTasks.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TaskManagerTest.testGetUserTasksReturnsCorrectTasks.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TaskPersistenceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskPersistenceTest.testLoadTasksFromCorruptedJsonFile.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.TaskPersistenceTest.testLoadTasksFromCorruptedJsonFile.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TaskPersistenceTest.testLoadTasksReturnsEmptyWhenFileDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskPersistenceTest.testLoadUsersReturnsEmptyWhenFileDoesNotExist.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TaskPersistenceTest.testSaveAndLoadTasks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskPersistenceTest.testSaveAndLoadUsers.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TaskTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TaskTest.testParameterizedConstructorAndGetId.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TaskTest.testToStringIncludesAllFields.executor&quot;: &quot;Run&quot;,
@@ -137,8 +150,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.testGetId">
-    <configuration name="UserTest.testGetId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TaskPersistenceTest">
+    <configuration name="TaskPersistenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
@@ -147,14 +160,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.UserTest" />
-      <option name="METHOD_NAME" value="testGetId" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskPersistenceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskPersistenceTest.testLoadTasksFromCorruptedJsonFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskPersistenceTest" />
+      <option name="METHOD_NAME" value="testLoadTasksFromCorruptedJsonFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testSetAndCheckPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskPersistenceTest.testLoadUsersReturnsEmptyWhenFileDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
@@ -163,14 +191,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.UserTest" />
-      <option name="METHOD_NAME" value="testSetAndCheckPassword" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskPersistenceTest" />
+      <option name="METHOD_NAME" value="testLoadUsersReturnsEmptyWhenFileDoesNotExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testSetAndGetUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskPersistenceTest.testSaveAndLoadUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
@@ -179,8 +207,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.UserTest" />
-      <option name="METHOD_NAME" value="testSetAndGetUsername" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.TaskPersistenceTest" />
+      <option name="METHOD_NAME" value="testSaveAndLoadUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,29 +230,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testUserConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.taskmanager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.UserTest" />
-      <option name="METHOD_NAME" value="testUserConstructor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskPersistenceTest" />
+        <item itemvalue="JUnit.TaskPersistenceTest.testLoadUsersReturnsEmptyWhenFileDoesNotExist" />
+        <item itemvalue="JUnit.TaskPersistenceTest.testSaveAndLoadUsers" />
+        <item itemvalue="JUnit.TaskPersistenceTest.testLoadTasksFromCorruptedJsonFile" />
         <item itemvalue="JUnit.UserTest.testToString" />
-        <item itemvalue="JUnit.UserTest.testGetId" />
-        <item itemvalue="JUnit.UserTest.testSetAndCheckPassword" />
-        <item itemvalue="JUnit.UserTest.testSetAndGetUsername" />
-        <item itemvalue="JUnit.UserTest.testUserConstructor" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +278,9 @@
       <workItem from="1751661878187" duration="4179000" />
       <workItem from="1752256842352" duration="2383000" />
       <workItem from="1752259641959" duration="12659000" />
-      <workItem from="1752680346746" duration="1629000" />
+      <workItem from="1752680346746" duration="6542000" />
+      <workItem from="1752692121661" duration="3791000" />
+      <workItem from="1752768404922" duration="3324000" />
     </task>
     <task id="LOCAL-00001" summary="first commit message for Tobi">
       <option name="closed" value="true" />
@@ -388,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752515524926</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Updated the UserTest class to use a more realistic password. I also implemented a checkPassword method which guides against timing attacks in the user class">
+      <option name="closed" value="true" />
+      <created>1752682399879</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1752682399879</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,6 +458,7 @@
     <MESSAGE value="Created the task persistence file and ran it" />
     <MESSAGE value="Completed the taskPersistenceTest class" />
     <MESSAGE value="Completed the UserTest class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed the UserTest class" />
+    <MESSAGE value="Updated the UserTest class to use a more realistic password. I also implemented a checkPassword method which guides against timing attacks in the user class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the UserTest class to use a more realistic password. I also implemented a checkPassword method which guides against timing attacks in the user class" />
   </component>
 </project>

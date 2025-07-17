@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class TaskManager {
     private List<Task> allTasks;  //The total lists of tasks that have been added to the manager
     private Map<Integer, List<Task>> userTaskDictionary; //The dictionary containing the key, element pair of the userId and the userTaskList
-    //int tasksNumber = 0;
+    //private int totalTasks = allTasks.size();
     public TaskManager(){
         this.allTasks = new ArrayList<>();
         this.userTaskDictionary = new LinkedHashMap<>();
