@@ -1,11 +1,9 @@
 package com.example.taskmanager;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.*;
 
 import java.io.File;
-import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -13,18 +11,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TaskPersistenceTest {
 
-    private final String tempFilePath = "temp_tasks.json";
+    private final String tempFilePath = "temp_file.json";
 
     @BeforeEach
     public void setup() {
-        TaskPersistenceManager.setFilePath(tempFilePath);
+        TaskPersistenceManager.setTaskFilePath(tempFilePath);
+        TaskPersistenceManager.setUserFilePath(tempFilePath);
     }
     @AfterEach
     public void cleanup() {
-        boolean deleted = new File(tempFilePath).delete();
-        if (!deleted) {
-            //System.err.println("Failed to delete temp file: " + tempFilePath);
-        }
+        new File(tempFilePath).delete();
     }
 
     @Test
@@ -45,10 +41,10 @@ public class TaskPersistenceTest {
     }
 
     @Test
-    void testLoadTasksFromCorruptedJsonFile() {
+    public void testLoadTasksFromCorruptedJsonFile() {
         // Arrange: create a corrupted JSON file
-        File corruptedFile = new File("temp_tasks_2.json");
-        TaskPersistenceManager.setFilePath("temp_tasks_2.json");
+        File corruptedFile = new File("temp_file_2.json");
+        TaskPersistenceManager.setTaskFilePath("temp_file_2.json");
 
         try (var writer = new java.io.FileWriter(corruptedFile)) {
             writer.write("{ invalid json: ["); // Malformed JSON
@@ -61,6 +57,26 @@ public class TaskPersistenceTest {
 
         // Assert: should return an empty map and not throw
        assertTrue(result.isEmpty(), "Expected empty map on corrupted JSON input.");
+       new File("temp_file_2.json").delete();
+    }
+    @Test
+    public void testSaveAndLoadUsers() {
+        User user1 = new User("User1", "securePass123");
+        User user2 = new User("User2", "securePass231");
+        User user3 = new User("User3", "securePass321");
+        List<User> allUsers = new ArrayList<>();
+        allUsers.add(user1);
+        allUsers.add(user2);
+        allUsers.add(user3);
+        TaskPersistenceManager.saveUsers(allUsers);
+        List<User> loadedUsers = TaskPersistenceManager.loadUsers();
+        assertEquals(allUsers.size(), loadedUsers.size());
+        assertEquals(allUsers.get(0).getUsername(), loadedUsers.get(0).getUsername());
     }
 
+    @Test
+    public void testLoadUsersReturnsEmptyWhenFileDoesNotExist() {
+        List<User> loadedUsers = TaskPersistenceManager.loadUsers();
+        assertTrue(loadedUsers.isEmpty());
+    }
 }
