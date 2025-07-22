@@ -2,7 +2,9 @@ package com.example.taskmanager;
 
 import org.junit.jupiter.api.*;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -51,13 +53,18 @@ public class PersistenceManagerTest {
         } catch (Exception e) {
             fail("Failed to set up corrupted file for test.");
         }
+        ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+        System.setErr(new PrintStream(errContent));
 
         // Act: attempt to load the corrupted file
         Map<Integer, List<Task>> result = PersistenceManager.loadTasks();
 
         // Assert: should return an empty map and not throw
        assertTrue(result.isEmpty(), "Expected empty map on corrupted JSON input.");
-       new File("temp_file_2.json").delete();
+       assertTrue(errContent.toString().contains("Error loading tasks"));
+
+        new File("temp_file_2.json").delete();
+        System.setErr(System.err);
     }
     @Test
     public void testSaveAndLoadUsers() {

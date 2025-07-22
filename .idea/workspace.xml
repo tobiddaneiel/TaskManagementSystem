@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Created a UserManager class and updated the TaskPersistenceManager class to ensure the user class could be saved in a file as well.Also updated the TaskPersistenceManager class to PersistenceManager and the TaskPersistenceTest class to PersistenceManagerTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/UserManagerTest.java" afterDir="false" />
+    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="completed the test class for all classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/PersistenceManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/TaskManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/UserManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/PersistenceManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/PersistenceManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/TaskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskPersistenceManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/UserManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/taskmanager/UserManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taskmanager/TaskManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskPersistenceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/taskmanager/TaskTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,13 +103,16 @@
     "JUnit.TaskTest.testParameterizedConstructorAndGetId.executor": "Run",
     "JUnit.TaskTest.testToStringIncludesAllFields.executor": "Run",
     "JUnit.UserManagerTest.executor": "Run",
+    "JUnit.UserManagerTest.testLogin.executor": "Run",
     "JUnit.UserTest.executor": "Run",
     "JUnit.UserTest.testGetId.executor": "Run",
     "JUnit.UserTest.testSetAndCheckPassword.executor": "Run",
     "JUnit.UserTest.testSetAndGetUsername.executor": "Run",
     "JUnit.UserTest.testToString.executor": "Run",
     "JUnit.UserTest.testUserConstructor.executor": "Run",
+    "Maven.Main.executor": "Run",
     "Maven.TaskManager [clean].executor": "Run",
+    "Maven.TaskManager [install,--non-recursive].executor": "Run",
     "Maven.TaskManager [install].executor": "Run",
     "Maven.TaskManager [test].executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -217,17 +213,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserManagerTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.taskmanager.PersistenceManagerTest" />
+          <option name="PATTERN" value="com.example.taskmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.UserTest" />
-      <option name="METHOD_NAME" value="testToString" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.UserManagerTest" />
+      <option name="METHOD_NAME" value="testLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -235,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserManagerTest.testLogin" />
         <item itemvalue="JUnit.PersistenceManagerTest" />
         <item itemvalue="JUnit.PersistenceManagerTest.testLoadUsersReturnsEmptyWhenFileDoesNotExist" />
         <item itemvalue="JUnit.PersistenceManagerTest.testSaveAndLoadUsers" />
         <item itemvalue="JUnit.PersistenceManagerTest.testLoadTasksFromCorruptedJsonFile" />
-        <item itemvalue="JUnit.UserTest.testToString" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +279,9 @@
       <workItem from="1752259641959" duration="12659000" />
       <workItem from="1752680346746" duration="6542000" />
       <workItem from="1752692121661" duration="3791000" />
-      <workItem from="1752768404922" duration="8573000" />
+      <workItem from="1752768404922" duration="9026000" />
+      <workItem from="1752856167873" duration="2866000" />
+      <workItem from="1753204399892" duration="7985000" />
     </task>
     <task id="LOCAL-00001" summary="first commit message for Tobi">
       <option name="closed" value="true" />
@@ -429,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752773185361</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="completed the test class for all classes">
+      <option name="closed" value="true" />
+      <created>1752784030714</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1752784030714</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,6 +485,7 @@
     <MESSAGE value="Completed the UserTest class" />
     <MESSAGE value="Updated the UserTest class to use a more realistic password. I also implemented a checkPassword method which guides against timing attacks in the user class" />
     <MESSAGE value="Created a UserManager class and updated the TaskPersistenceManager class to ensure the user class could be saved in a file as well.Also updated the TaskPersistenceManager class to PersistenceManager and the TaskPersistenceTest class to PersistenceManagerTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a UserManager class and updated the TaskPersistenceManager class to ensure the user class could be saved in a file as well.Also updated the TaskPersistenceManager class to PersistenceManager and the TaskPersistenceTest class to PersistenceManagerTest" />
+    <MESSAGE value="completed the test class for all classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed the test class for all classes" />
   </component>
 </project>

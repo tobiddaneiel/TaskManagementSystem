@@ -14,6 +14,15 @@ public class TaskManager {
         this.allTasks = new ArrayList<>();
         this.userTaskDictionary = new LinkedHashMap<>();
     }
+
+    public Task getTask(Integer taskId){
+        for (Task task : allTasks) {
+            if (task.getId() == taskId) {
+                return task;
+            }
+        }
+        return null;
+    }
     public boolean addTask(Task newTask, Integer userId){
         //Checks that the userId and newTask are both valid
         if (newTask == null || userId == null) return false;

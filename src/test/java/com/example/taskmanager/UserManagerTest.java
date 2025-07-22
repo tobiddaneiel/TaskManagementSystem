@@ -40,13 +40,13 @@ public class UserManagerTest {
     @Test
     public void testLogin(){
         userManager.register(user1);
-        boolean loggedInUser1 = userManager.login(username1, password1);
-        assertTrue(loggedInUser1);
-        boolean loggedInUser2 = userManager.login(username2, password2);
-        assertFalse(loggedInUser2);
+        User loggedInUser1 = userManager.login(username1, password1);
+        assertNotNull(loggedInUser1);
+        User loggedInUser2 = userManager.login(username2, password2);
+        assertNull(loggedInUser2);
         userManager.register(user2);
-        boolean loggedInUser2Again = userManager.login(username2, password2);
-        assertTrue(loggedInUser2Again);
+        User loggedInUser2Again = userManager.login(username2, password2);
+        assertNotNull(loggedInUser2Again);
     }
     @Test
     public void testRegisterWithNullUser(){
