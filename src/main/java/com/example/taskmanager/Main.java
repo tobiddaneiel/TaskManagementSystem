@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         taskManager.loadAllTasksFromFile();
-        //userManager.getAllUsers();
+        userManager.loadAllUsersFromFile();
 
         System.out.println("Welcome to Task Manager!");
         while (true) {
@@ -70,7 +70,7 @@ public class Main {
 
     private static void updateTask() {
         System.out.println("Enter task ID to update:");
-        Integer ID = scanner.nextInt();
+        Integer ID = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter task status update (OPENED, PROGRESSING, COMPLETED) :");
         String description = scanner.nextLine();
         taskManager.updateTask(taskManager.getTask(ID),description, currentUser.getId());
@@ -84,6 +84,7 @@ public class Main {
         String description = scanner.nextLine();
         Task task = new Task(title, description);
         taskManager.addTask(task, currentUser.getId());
+        System.out.println("Task ID: " + task.getId() + " added successfully.");
         //System.out.println("Task added successfully.");
     }
 

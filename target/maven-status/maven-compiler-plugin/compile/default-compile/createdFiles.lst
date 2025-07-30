@@ -1,4 +1,5 @@
 com\example\taskmanager\Task.class
+com\example\taskmanager\Main.class
 com\example\taskmanager\PersistenceManager$2.class
 com\example\taskmanager\PersistenceManager.class
 com\example\taskmanager\User.class
