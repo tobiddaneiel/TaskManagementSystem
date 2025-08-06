@@ -63,7 +63,7 @@ public class Main {
 
     private static void deleteTask() {
         System.out.println("Enter task ID to delete:");
-        Integer ID = scanner.nextInt();
+        Integer ID = Integer.parseInt(scanner.nextLine());
         taskManager.deleteTask(taskManager.getTask(ID), currentUser.getId());
         //System.out.println("Task updated successfully.");
     }
