@@ -46,15 +46,16 @@ public class Main {
         System.out.println("4. Get Your Tasks");
         System.out.println("5. Get All Tasks");
         System.out.println("6. Save");
+        System.out.println("7. Logout");
         System.out.println("Choose an option:");
         String input = scanner.nextLine();
         switch (input){
             case "1": addTask();break;
             case "2": updateTask();break;
             case "3": deleteTask();break;
-            case "4": taskManager.getUserTasks(currentUser.getId());break;
-            case "5": taskManager.getAllTasks();break;
-            case "6": taskManager.saveAllTasksToFile();break;
+            case "4": getYourTasks();break;
+            case "5": getAllTasks();break;
+            case "6": saveAllTasksToFile();break;
             default:
                 System.out.println("Invalid choice.");//throw new IllegalStateException("Unexpected value: " + input);
         }
@@ -64,17 +65,19 @@ public class Main {
     private static void deleteTask() {
         System.out.println("Enter task ID to delete:");
         Integer ID = Integer.parseInt(scanner.nextLine());
+        //System.out.println(taskManager.getTask(ID).toString());
         taskManager.deleteTask(taskManager.getTask(ID), currentUser.getId());
-        //System.out.println("Task updated successfully.");
+        System.out.println("Task deleted successfully.");
     }
 
     private static void updateTask() {
         System.out.println("Enter task ID to update:");
         Integer ID = Integer.parseInt(scanner.nextLine());
+        System.out.println(taskManager.getTask(ID).toString());
         System.out.println("Enter task status update (OPENED, PROGRESSING, COMPLETED) :");
         String description = scanner.nextLine();
         taskManager.updateTask(taskManager.getTask(ID),description, currentUser.getId());
-        //System.out.println("Task updated successfully.");
+        System.out.println("Task status updated successfully.");
     }
 
     private static void addTask() {
@@ -84,8 +87,19 @@ public class Main {
         String description = scanner.nextLine();
         Task task = new Task(title, description);
         taskManager.addTask(task, currentUser.getId());
-        System.out.println("Task ID: " + task.getId() + " added successfully.");
-        //System.out.println("Task added successfully.");
+        System.out.println(task.getTitle() + " Task with ID: " + task.getId() + " added successfully.");
+    }
+
+    private static void getYourTasks() {
+        System.out.println(taskManager.getUserTasks(currentUser.getId()));
+    }
+
+    private static void getAllTasks() {
+        System.out.println(taskManager.getAllTasks());;
+    }
+
+    private static void saveAllTasksToFile() {
+        taskManager.saveAllTasksToFile();
     }
 
     private static void login() {

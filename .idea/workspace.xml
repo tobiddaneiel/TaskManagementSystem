@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="completed the test class for all classes. Made a change to the UserManager class for the login function to return a User not a boolean and to test it as such.Added some methods to the userManager class to add and take users from a file. Also created a method to get a task via the ID.Created a main class to act as the current UI. Everything looks good up to the updateTask section">
+    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.taskmanager.TaskPersistenceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.taskmanager.TaskPersistenceTest.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="2" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,65 +76,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TaskManagement.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TaskManagementSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.PersistenceManagerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagementSystemTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagementSystemTest.testAddTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagementSystemTest.testDeleteTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagementSystemTest.testViewTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testAddDuplicateTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testAddTaskSuccessfully.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testGetAllTasksReturnsAllTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskManagerTest.testGetUserTasksReturnsCorrectTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskPersistenceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskPersistenceTest.testLoadTasksFromCorruptedJsonFile.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskPersistenceTest.testLoadTasksReturnsEmptyWhenFileDoesNotExist.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskPersistenceTest.testLoadUsersReturnsEmptyWhenFileDoesNotExist.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskPersistenceTest.testSaveAndLoadTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskPersistenceTest.testSaveAndLoadUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.testParameterizedConstructorAndGetId.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.testToStringIncludesAllFields.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserManagerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserManagerTest.testLogin.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.testGetId.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.testSetAndCheckPassword.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.testSetAndGetUsername.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.testToString.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.testUserConstructor.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.TaskManager [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.TaskManager [install,--non-recursive].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.TaskManager [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.TaskManager [test].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Coverage",
+    "Application.Mainrun.executor": "Coverage",
+    "Application.TaskManagement.executor": "Run",
+    "Application.TaskManagementSystem.executor": "Run",
+    "Application.TaskManagerApp.executor": "Run",
+    "Application.TaskmanagerApp.executor": "Coverage",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.PersistenceManagerTest.executor": "Run",
+    "JUnit.TaskManagementSystemTest.executor": "Run",
+    "JUnit.TaskManagementSystemTest.testAddTask.executor": "Run",
+    "JUnit.TaskManagementSystemTest.testDeleteTask.executor": "Run",
+    "JUnit.TaskManagementSystemTest.testViewTask.executor": "Run",
+    "JUnit.TaskManagerTest.executor": "Run",
+    "JUnit.TaskManagerTest.testAddDuplicateTask.executor": "Run",
+    "JUnit.TaskManagerTest.testAddTaskSuccessfully.executor": "Run",
+    "JUnit.TaskManagerTest.testGetAllTasksReturnsAllTasks.executor": "Run",
+    "JUnit.TaskManagerTest.testGetUserTasksReturnsCorrectTasks.executor": "Run",
+    "JUnit.TaskPersistenceTest.executor": "Run",
+    "JUnit.TaskPersistenceTest.testLoadTasksFromCorruptedJsonFile.executor": "Run",
+    "JUnit.TaskPersistenceTest.testLoadTasksReturnsEmptyWhenFileDoesNotExist.executor": "Run",
+    "JUnit.TaskPersistenceTest.testLoadUsersReturnsEmptyWhenFileDoesNotExist.executor": "Run",
+    "JUnit.TaskPersistenceTest.testSaveAndLoadTasks.executor": "Run",
+    "JUnit.TaskPersistenceTest.testSaveAndLoadUsers.executor": "Run",
+    "JUnit.TaskTest.executor": "Run",
+    "JUnit.TaskTest.testParameterizedConstructorAndGetId.executor": "Run",
+    "JUnit.TaskTest.testToStringIncludesAllFields.executor": "Run",
+    "JUnit.UserManagerTest.executor": "Run",
+    "JUnit.UserManagerTest.testLogin.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "JUnit.UserTest.testGetId.executor": "Run",
+    "JUnit.UserTest.testSetAndCheckPassword.executor": "Run",
+    "JUnit.UserTest.testSetAndGetUsername.executor": "Run",
+    "JUnit.UserTest.testToString.executor": "Run",
+    "JUnit.UserTest.testUserConstructor.executor": "Run",
+    "JUnit.com.example.taskmanager in TaskManager.executor": "Run",
+    "Maven.Main.executor": "Run",
+    "Maven.Mainrun.executor": "Run",
+    "Maven.TaskManager [clean].executor": "Run",
+    "Maven.TaskManager [install,--non-recursive].executor": "Run",
+    "Maven.TaskManager [install].executor": "Run",
+    "Maven.TaskManager [test].executor": "Run",
+    "Maven.TaskManager.executor": "Run",
+    "Maven.TaskManagerApp.executor": "Run",
+    "Maven.TaskmanagerApp.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "build.tools",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.taskmanager" />
@@ -143,7 +157,23 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PersistenceManagerTest">
+  <component name="RunManager" selected="Application.Mainrun">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="20" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.Main" />
+      <module name="TaskManager" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mainrun" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.Main" />
+      <module name="TaskManager" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PersistenceManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManager" />
       <extension name="coverage">
@@ -155,22 +185,6 @@
       <option name="PACKAGE_NAME" value="com.example.taskmanager" />
       <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.PersistenceManagerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersistenceManagerTest.testLoadTasksFromCorruptedJsonFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.taskmanager.PersistenceManagerTest" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="com.example.taskmanager.PersistenceManagerTest" />
-      <option name="METHOD_NAME" value="testLoadTasksFromCorruptedJsonFile" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,21 +237,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.example.taskmanager in TaskManager" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Mainrun" />
+      <item itemvalue="JUnit.com.example.taskmanager in TaskManager" />
+      <item itemvalue="JUnit.PersistenceManagerTest" />
+      <item itemvalue="JUnit.PersistenceManagerTest.testLoadUsersReturnsEmptyWhenFileDoesNotExist" />
+      <item itemvalue="JUnit.PersistenceManagerTest.testSaveAndLoadUsers" />
+      <item itemvalue="JUnit.UserManagerTest.testLogin" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserManagerTest.testLogin" />
         <item itemvalue="JUnit.PersistenceManagerTest" />
         <item itemvalue="JUnit.PersistenceManagerTest.testLoadUsersReturnsEmptyWhenFileDoesNotExist" />
         <item itemvalue="JUnit.PersistenceManagerTest.testSaveAndLoadUsers" />
-        <item itemvalue="JUnit.PersistenceManagerTest.testLoadTasksFromCorruptedJsonFile" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.27812.49" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.27812.49" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
       </set>
     </attachedChunks>
   </component>
@@ -279,6 +317,13 @@
       <workItem from="1753885962222" duration="2738000" />
       <workItem from="1754493437727" duration="225000" />
       <workItem from="1754493807262" duration="269000" />
+      <workItem from="1754494312157" duration="1374000" />
+      <workItem from="1754495754258" duration="1193000" />
+      <workItem from="1754505443582" duration="2336000" />
+      <workItem from="1754508544518" duration="1187000" />
+      <workItem from="1754509809210" duration="3238000" />
+      <workItem from="1754513158900" duration="620000" />
+      <workItem from="1754820211060" duration="9425000" />
     </task>
     <task id="LOCAL-00001" summary="first commit message for Tobi">
       <option name="closed" value="true" />
@@ -448,7 +493,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753888361253</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="completed the test class for all classes. Made a change to the UserManager class for the login function to return a User not a boolean and to test it as such.Added some methods to the userManager class to add and take users from a file. Also created a method to get a task via the ID.Created a main class to act as the current UI. Everything looks good up to the updateTask section">
+      <option name="closed" value="true" />
+      <created>1754494551839</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1754494551839</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,5 +555,10 @@
     <MESSAGE value="completed the test class for all classes. Made a change to the UserManager class for the login function to return a User not a boolean and to test it as such.Added some methods to the userManager class to add and take users from a file. Also created a method to get a task via the ID" />
     <MESSAGE value="completed the test class for all classes. Made a change to the UserManager class for the login function to return a User not a boolean and to test it as such.Added some methods to the userManager class to add and take users from a file. Also created a method to get a task via the ID.Created a main class to act as the current UI. Everything looks good up to the updateTask section" />
     <option name="LAST_COMMIT_MESSAGE" value="completed the test class for all classes. Made a change to the UserManager class for the login function to return a User not a boolean and to test it as such.Added some methods to the userManager class to add and take users from a file. Also created a method to get a task via the ID.Created a main class to act as the current UI. Everything looks good up to the updateTask section" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TaskManagement$TaskmanagerApp.ic" NAME="TaskmanagerApp Coverage Results" MODIFIED="1754513561998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/TaskManagement$Mainrun.ic" NAME="Mainrun Coverage Results" MODIFIED="1754832425615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/TaskManagement$Main.ic" NAME="Main Coverage Results" MODIFIED="1754830785766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
