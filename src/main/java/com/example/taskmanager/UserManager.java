@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class UserManager {
-    private List<User> allUsers = new ArrayList<>();
+    private List<User> allUsers;
 
     public UserManager() {
         allUsers = new ArrayList<>();
@@ -21,7 +21,7 @@ public class UserManager {
     public User login(String username, String password) {
         for (User user : allUsers) {
             if (user.getUsername().equals(username) && user.checkPassword(password)) {
-                System.out.println("User logged in successfully: " + user.getUsername());
+                System.out.printf("User logged in successfully: %s%n", user.toString());
                 return user;
             }
         }
@@ -32,6 +32,7 @@ public class UserManager {
     public List<User> getAllUsers() {
         return allUsers;
     }
+
     public void saveAllUsersToFile() {
         PersistenceManager.saveUsers(allUsers);
     }

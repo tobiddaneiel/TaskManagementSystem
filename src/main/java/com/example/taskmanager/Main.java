@@ -56,6 +56,7 @@ public class Main {
             case "4": getYourTasks();break;
             case "5": getAllTasks();break;
             case "6": saveAllTasksToFile();break;
+            case "7": currentUser = null;break;
             default:
                 System.out.println("Invalid choice.");//throw new IllegalStateException("Unexpected value: " + input);
         }
@@ -118,6 +119,7 @@ public class Main {
         String password = scanner.nextLine();
         User user = new User(username, password);
         userManager.register(user);
+        userManager.saveAllUsersToFile();
         //System.out.println("User registered successfully.");
     }
 }
