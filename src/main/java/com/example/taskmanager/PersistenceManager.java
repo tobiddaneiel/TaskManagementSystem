@@ -48,7 +48,7 @@ public class PersistenceManager {
     public static void saveUsers(List<User> allUsers) {
         try {
             mapper.writerWithDefaultPrettyPrinter().writeValue(new File(USER_FILE_PATH), allUsers);
-            System.out.println("New users saved successfully.");
+            System.out.println("New user saved successfully.");
         } catch (IOException e) {
             System.err.println("Error adding user: " + e.getMessage());
         }

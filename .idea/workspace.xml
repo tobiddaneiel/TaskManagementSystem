@@ -7,6 +7,7 @@
     <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Add the implementation of the users,json when a new user registers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/PersistenceManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,6 +326,7 @@
       <workItem from="1754991566927" duration="7168000" />
       <workItem from="1755198843721" duration="351000" />
       <workItem from="1755226004687" duration="3096000" />
+      <workItem from="1755281588884" duration="2576000" />
     </task>
     <task id="LOCAL-00001" summary="first commit message for Tobi">
       <option name="closed" value="true" />
@@ -578,6 +580,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TaskManagement$TaskmanagerApp.ic" NAME="TaskmanagerApp Coverage Results" MODIFIED="1754513561998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/TaskManagement$Mainrun.ic" NAME="Mainrun Coverage Results" MODIFIED="1754832425615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/TaskManagement$Main.ic" NAME="Main Coverage Results" MODIFIED="1755229423816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/TaskManagement$Main.ic" NAME="Main Coverage Results" MODIFIED="1755283273883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

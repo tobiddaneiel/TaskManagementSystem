@@ -82,13 +82,18 @@ public class Main {
     }
 
     private static void addTask() {
-        System.out.println("Enter task title:");
-        String title = scanner.nextLine();
-        System.out.println("Enter task description:");
-        String description = scanner.nextLine();
-        Task task = new Task(title, description);
-        taskManager.addTask(task, currentUser.getId());
-        System.out.println(task.getTitle() + " Task with ID: " + task.getId() + " added successfully.");
+        try {
+            System.out.println("Enter task title:");
+            String title = scanner.nextLine();
+            System.out.println("Enter task description:");
+            String description = scanner.nextLine();
+            Task task = new Task(title, description);
+            taskManager.addTask(task, currentUser.getId());
+            System.out.println(task.getTitle() + " Task with ID: " + task.getId() + " added successfully.");
+        }catch (IllegalArgumentException e){
+            System.out.println(e.toString() + "\nAdd task again.");
+        }
+        addTask();
     }
 
     private static void getYourTasks() {
@@ -124,13 +129,13 @@ public class Main {
                 user = new User(username, password);
                 userCreated = true;
             }catch (IllegalArgumentException e){
-                System.out.println(e.toString());
+                System.out.println(e.toString() + "\nRegister again.");
             }
         }
         try {
             userManager.register(user);
         }catch (NullPointerException e){
-            System.out.println(e.toString());
+            System.out.println(e.toString() + "\nRegister again.");
         }
         userManager.saveAllUsersToFile();
         //System.out.println("User registered successfully.");
