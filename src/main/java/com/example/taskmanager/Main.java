@@ -65,10 +65,18 @@ public class Main {
 
     private static void deleteTask() {
         System.out.println("Enter task ID to delete:");
-        Integer ID = Integer.parseInt(scanner.nextLine());
-        System.out.println("Deleting " + taskManager.getTask(ID).toString());
-        taskManager.deleteTask(taskManager.getTask(ID), currentUser.getId());
-        System.out.println("Task deleted successfully.");
+        try {
+            int ID = Integer.parseInt(scanner.nextLine());
+            if (taskManager.getTask(ID) == null) {
+                System.out.println("No task found with that ID.");
+                return;
+            }
+            System.out.println("Deleting " + taskManager.getTask(ID).toString());
+            taskManager.deleteTask(taskManager.getTask(ID), currentUser.getId());
+            System.out.println("Task deleted successfully.");
+        }catch (NumberFormatException e) {
+            System.out.println("Invalid ID. Please enter a number.");
+        }
     }
 
     private static void updateTask() {
