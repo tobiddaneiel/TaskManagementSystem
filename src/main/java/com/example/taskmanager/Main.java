@@ -113,12 +113,25 @@ public class Main {
     }
 
     private static void register() {
-        System.out.println("Enter username:");
-        String username = scanner.nextLine();
-        System.out.println("Enter password:");
-        String password = scanner.nextLine();
-        User user = new User(username, password);
-        userManager.register(user);
+        boolean userCreated = false;
+        User user = null;
+        while (!userCreated){
+            try {
+                System.out.println("Enter username:");
+                String username = scanner.nextLine();
+                System.out.println("Enter password:");
+                String password = scanner.nextLine();
+                user = new User(username, password);
+                userCreated = true;
+            }catch (IllegalArgumentException e){
+                System.out.println(e.toString());
+            }
+        }
+        try {
+            userManager.register(user);
+        }catch (NullPointerException e){
+            System.out.println(e.toString());
+        }
         userManager.saveAllUsersToFile();
         //System.out.println("User registered successfully.");
     }
