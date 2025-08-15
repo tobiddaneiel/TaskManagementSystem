@@ -73,12 +73,21 @@ public class Main {
 
     private static void updateTask() {
         System.out.println("Enter task ID to update:");
-        Integer ID = Integer.parseInt(scanner.nextLine());
-        System.out.println(taskManager.getTask(ID).toString());
-        System.out.println("Enter task status update (OPENED, PROGRESSING, COMPLETED) :");
-        String description = scanner.nextLine();
-        taskManager.updateTask(taskManager.getTask(ID),description, currentUser.getId());
-        System.out.println("Task status updated successfully.");
+        try {
+            int ID = Integer.parseInt(scanner.nextLine());
+            if (taskManager.getTask(ID) == null) {
+                System.out.println("No task found with that ID.");
+                return;
+            }
+            System.out.println(taskManager.getTask(ID).toString());
+            System.out.println("Enter task status update (OPENED, PROGRESSING, COMPLETED) :");
+            String description = scanner.nextLine();
+            taskManager.updateTask(taskManager.getTask(ID),description, currentUser.getId());
+            System.out.println("Task status updated successfully.");
+        }catch (NumberFormatException e) {
+            System.out.println("Invalid ID. Please enter a number.");
+        }
+
     }
 
     private static void addTask() {
