@@ -35,7 +35,7 @@ public class Main {
                 login();break;
             case "3": System.exit(0);
             default:
-                System.out.println("Invalid choice.");//throw new IllegalStateException("Unexpected value: " + input);
+                System.out.println("Invalid choice.");
         }
     }
 
@@ -58,7 +58,7 @@ public class Main {
             case "6": saveAllTasksToFile();break;
             case "7": currentUser = null;break;
             default:
-                System.out.println("Invalid choice.");//throw new IllegalStateException("Unexpected value: " + input);
+                System.out.println("Invalid choice.");
         }
     }
 
@@ -66,7 +66,7 @@ public class Main {
     private static void deleteTask() {
         System.out.println("Enter task ID to delete:");
         Integer ID = Integer.parseInt(scanner.nextLine());
-        //System.out.println(taskManager.getTask(ID).toString());
+        System.out.println("Deleting " + taskManager.getTask(ID).toString());
         taskManager.deleteTask(taskManager.getTask(ID), currentUser.getId());
         System.out.println("Task deleted successfully.");
     }
@@ -92,8 +92,8 @@ public class Main {
             System.out.println(task.getTitle() + " Task with ID: " + task.getId() + " added successfully.");
         }catch (IllegalArgumentException e){
             System.out.println(e.toString() + "\nAdd task again.");
+            addTask();
         }
-        addTask();
     }
 
     private static void getYourTasks() {

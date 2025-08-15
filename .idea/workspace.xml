@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="Add the implementation of the users,json when a new user registers">
+    <list default="true" id="b0dbaf71-f04a-494b-8cb6-999577a8293f" name="Changes" comment="feat: Added error management to prevent crashing after errors in UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/taskmanager/PersistenceManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,7 +325,7 @@
       <workItem from="1754991566927" duration="7168000" />
       <workItem from="1755198843721" duration="351000" />
       <workItem from="1755226004687" duration="3096000" />
-      <workItem from="1755281588884" duration="2576000" />
+      <workItem from="1755281588884" duration="4473000" />
     </task>
     <task id="LOCAL-00001" summary="first commit message for Tobi">
       <option name="closed" value="true" />
@@ -520,7 +519,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755005421174</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat: Added error management to prevent crashing after errors in UI">
+      <option name="closed" value="true" />
+      <created>1755284339784</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1755284339784</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +582,8 @@
     <MESSAGE value="completed the test class for all classes. Made a change to the UserManager class for the login function to return a User not a boolean and to test it as such.Added some methods to the userManager class to add and take users from a file. Also created a method to get a task via the ID.Created a main class to act as the current UI. Everything looks good up to the updateTask section" />
     <MESSAGE value="Moved on from trying to fix the run config for the main class and decided to run with coverage instead. Created more methods in the main class and fine tuned the previous ones" />
     <MESSAGE value="Add the implementation of the users,json when a new user registers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the implementation of the users,json when a new user registers" />
+    <MESSAGE value="feat: Added error management to prevent crashing after errors in UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Added error management to prevent crashing after errors in UI" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TaskManagement$TaskmanagerApp.ic" NAME="TaskmanagerApp Coverage Results" MODIFIED="1754513561998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
